@@ -1,0 +1,61 @@
+  ____           _   _   _______  ______  _     ___ ___ _____ 
+ / ___|__ _  ___| |_(_) | ____\ \/ /  _ \| |   / _ \_ _|_   _|
+| |   / _` |/ __| __| | |  _|  \  /| |_) | |  | | | | |  | |  
+| |__| (_| | (__| |_| | | |___ /  \|  __/| |__| |_| | |  | |  
+ \____\__,_|\___|\__|_| |_____/_/\_\_|   |_____\___/___| |_|  
+                                                              
+
+Choose the execution mode:
+1. Local
+2. Public
+Enter your choice (1 or 2): Choose the pentesting level:
+1. Medium
+2. Hard
+Enter your choice (1 or 2): You selected Hard level pentesting.
+Masukkan semua target IP atau domain, dipisahkan oleh koma: Starting Nmap 7.80 ( https://nmap.org ) at 2024-07-06 19:31 WIB
+Nmap scan report for 10.33.102.225
+Host is up (0.00014s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.54 ((Debian))
+|_http-server-header: Apache/2.4.54 (Debian)
+|_http-title: Login to Cacti
+MAC Address: 00:50:56:97:49:B5 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.83 seconds
+Traceback (most recent call last):
+  File "report.py", line 256, in <module>
+    generate_report()
+  File "report.py", line 242, in generate_report
+    add_vulnerability_exploitation(document)
+  File "report.py", line 182, in add_vulnerability_exploitation
+    with open("10.33.102.225_exploit.txt", "r") as exploit_file:
+FileNotFoundError: [Errno 2] No such file or directory: '10.33.102.225_exploit.txt'
+10.33.102.225
+Cacti detection in progress...
+Cacti detection completed.
+
+Open Ports for Cacti:
+
+10.33.102.225:
+Port: 80, Protocol: tcp, State: open, Service: http
+
+Contents of nmap_results_parsed.txt:
+10.33.102.225  80
+
+Processing Check Vulnerability: 10.33.102.225
+CVE-2022-46169 Vulnerability Detected: 10.33.102.225
+Processing Exploit: 10.33.102.225
+
+Exploit successful: 10.33.102.225
+Check and exploitation completed.
+Creating Reporting using report.py
+Traceback (most recent call last):
+  File "/home/yoan/TUGASAKHIR/cacti.py", line 330, in <module>
+    main()
+  File "/home/yoan/TUGASAKHIR/cacti.py", line 303, in main
+    os.rename("10.33.102.225_exploit.txt", os.path.join(target_directory, "10.33.102.225_exploit.txt"))
+FileNotFoundError: [Errno 2] No such file or directory: '10.33.102.225_exploit.txt' -> 'Cacti/10.33.102.225_exploit.txt'

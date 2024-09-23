@@ -1,0 +1,6 @@
+This copy of metasploit-framework is more than two weeks old.
+ Consider running 'msfupdate' to update to the latest version.
+[*] Using configured payload linux/x86/meterpreter/reverse_tcp
+RHOSTS => 182.253.224.58
+RPORT => 80
+[*] 182.253.224.58:80 - The target is not exploitable. Target is not a Cacti application.

